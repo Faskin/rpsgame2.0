@@ -24,16 +24,18 @@ namespace rpsgame2
         public Form2()
         {
             InitializeComponent();
+            timer1.Enabled = true;
             playerChoice = "none";
-        }
 
-        private void Btn_rock_Click(object sender, EventArgs e)
-        {
 
         }
+
+        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            label6.Text = Convert.ToString(rounds);
+            timePerRound--;
             label4.Text = Convert.ToString(timePerRound);
             if (timePerRound < 1)
             {
@@ -89,7 +91,7 @@ namespace rpsgame2
             }
             else if (playerChoice == "paper" && command == "rock")
             {
-                MessageBox.Show("player Wins");
+                MessageBox.Show("Mängija Wins");
                 playerWins++;
                 rounds--;
                 nextRound();
@@ -103,7 +105,7 @@ namespace rpsgame2
             }
             else if (playerChoice == "scissor" && command == "paper")
             {
-                MessageBox.Show("player Wins");
+                MessageBox.Show("Mängija Wins");
                 playerWins++;
                 rounds--;
                 nextRound();
@@ -117,7 +119,7 @@ namespace rpsgame2
             }
             else if (playerChoice == "rock" && command == "scissor")
             {
-                MessageBox.Show("player Wins");
+                MessageBox.Show("Mängija Wins");
                 playerWins++;
                 rounds--;
                 nextRound();
@@ -153,10 +155,7 @@ namespace rpsgame2
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -175,5 +174,7 @@ namespace rpsgame2
             playerChoice = "scissor";
             pictureBox1.Image = Properties.Resources.scissors;
         }
+
     }
+
 }

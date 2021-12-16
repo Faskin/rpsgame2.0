@@ -47,7 +47,7 @@
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(110, 55);
             this.btn_start.TabIndex = 2;
-            this.btn_start.Text = "a";
+            this.btn_start.Text = "AI";
             this.btn_start.UseVisualStyleBackColor = true;
             this.btn_start.Click += new System.EventHandler(this.btn_start_Click);
             // 
@@ -57,7 +57,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(110, 55);
             this.button1.TabIndex = 3;
-            this.button1.Text = "a";
+            this.button1.Text = "Mängija";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // Form1

@@ -54,7 +54,6 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "A";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
             // 
@@ -82,9 +81,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(186)));
             this.label1.Location = new System.Drawing.Point(463, 329);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 24);
+            this.label1.Size = new System.Drawing.Size(76, 24);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Player";
+            this.label1.Text = "Mängija";
             // 
             // button2
             // 
@@ -165,6 +164,10 @@
             this.label6.Size = new System.Drawing.Size(20, 24);
             this.label6.TabIndex = 12;
             this.label6.Text = "0";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
             // 
             // Form2
             // 
